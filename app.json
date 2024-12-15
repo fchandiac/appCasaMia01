@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "casamia",
     "name": "app",
     "slug": "app",
     "version": "1.0.0",
@@ -12,14 +13,24 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "plugins": [
+      [
+        "react-native-auth0",
+        {
+          "domain": "dev-rk0fl88jinxofajt.us.auth0.com"
+        }
+      ]
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.casamia"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.casamia"
     },
     "web": {
       "favicon": "./assets/favicon.png"
